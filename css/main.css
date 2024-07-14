@@ -1,0 +1,209 @@
+/* 
+Assignment 2
+Name: Alexander Liew 
+Pem Group: 1
+Admin Number: 191755G
+*/
+
+/* Shared */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+.start:hover,
+.whatiscovid:hover,
+.symptoms:hover,
+.fightingcovid:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+.arrow{
+    background-image: url(../img/Arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+.body-sect{
+    position: absolute;
+    background: #9bd4b5;
+    width: 325px;
+    height: 450px;
+    left: 37.5px;
+    top: 140px;
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+p{
+    line-height: 1.6em;
+}
+
+/* Home Scene */
+#home-scene {
+    position: relative;
+    background: #155250;
+    width: 400px;
+    height: 600px;
+}
+.start {
+    position: absolute;
+    background-image: url(../img/VirusStart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+    top: 175px;
+    left: 75px;
+    cursor: pointer;
+}
+.graphic1,
+.graphic2 {
+    position: absolute;
+    background-image: url(../img/MiniVirus.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.graphic1 {
+    left: 330px;
+    top: 50px;
+}
+.graphic2 {
+    left: 30px;
+    top: 500px;
+}
+/* Menu Scene */
+.scene {
+    position: relative;
+    background: #155250;
+    width: 400px;
+    height: 600px;
+}
+.whatiscovid,
+.symptoms,
+.fightingcovid {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+}
+.whatiscovid{
+    background-image: url(../img/WhatIsCovid19.svg);
+    top: 150px;
+    left: 10px;
+}
+.symptoms{
+    background-image: url(../img/Symptoms.svg);
+    top: 150px;
+    left: 220px;
+}
+.fightingcovid{
+    background-image: url(../img/FightingCovid19.svg);
+    top: 300px;
+    left: 115px;
+}
+/* Section */
+.map {
+    background-image: url(../img/FAVPNG_world-map-clip-art_TSK9gNAP.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 245px;
+    height: 200px;
+    width: 245px;
+    top: 300px;
+}
+.location{
+    background-image: url(../img/location.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 80px;
+    width: 75px;
+    top: 310px;
+    left: 225px;
+}
+.location > div {
+    float: right;
+}
+
+.whatiscovid-sect,
+.symptoms-sect,
+.fightingcovid-sect {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    width: 140px;
+    top: 50px;
+    left: 10px;
+}
+.whatiscovid-sect{
+    background-image: url(../img/WhatIsCovid19.svg);
+}
+.symptoms-sect{
+    background-image: url(../img/Symptoms.svg);
+}
+.fightingcovid-sect{
+    background-image: url(../img/FightingCovid19.svg);
+}
+
+.logo1, .logo2, .logo3, .logo4, .logo5, .logo6{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    top: 140px;
+    opacity: 0.6;
+    display: block;
+}
+.logo1 {
+    background-image: url(../img/cough.svg);
+    left: 30px
+}
+.logo2 {
+    background-image: url(../img/fever.svg);
+    left: 125px;
+    top: 250px;
+}
+.logo3 {
+    background-image: url(../img/tired.svg);
+    left: 210px;
+}
+.logo4 {
+    background-image: url(../img/hand-wash.svg);
+    left: 30px
+}
+.logo5 {
+    background-image: url(../img/social-distancing.svg);
+    left: 125px;
+    top: 250px;
+}
+.logo6 {
+    background-image: url(../img/coronavirus.svg);
+    left: 210px;
+}
+.logo1 > p, .logo2 > p, .logo3 > p, .logo4 > p, .logo5 > p, .logo6 > p{
+    position: absolute;
+    top: 90px;
+    left: -10px;
+    font-size: 16px;
+    opacity: 0;
+    width: 100px;
+    text-align: center;
+
+}
+.logo4 > p, .logo5 > p, .logo6 > p{
+    position: absolute;
+    top: 90px;
+    font-size: 16px;
+    opacity: 0;
+    width: 100px;
+}
